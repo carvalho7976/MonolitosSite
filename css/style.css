@@ -16,11 +16,52 @@
 	width: 50px;
 	height: auto;
 }
+
 .logo {
 	 width: 70%;
     height: auto !important;
 }
 
 .personal-grey{
-    background-color: #95a5a6 !important;
+    background-color: #9ca1a7 !important;
+}
+.footer{
+    background-color: #9ca1a7 !important;
+}
+.footer-copyright{
+    height: 50px;
+    font-weight: 300;
+    font-size: 16pt;
+}
+.slider .indicators .indicator-item {
+  border-radius: 25px;
+  background-color: #666666;
+  border: 3px solid #ffffff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    
+}
+.slider .indicators .indicator-item.active {
+  background-color: #ffffff;
+}
+.slider {
+  border-radius: 25px;
+  width: auto;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-right: 50px;
+  margin-left: 50px;
+  
+}
+.slider img {
+    border-radius: 25px;
+    height: auto;
+    width: auto;
+}
+.slider .indicators {
+  bottom: 60px;
+  z-index: 100;
+    
+  /* text-align: left; */
 }
