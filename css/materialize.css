@@ -2976,6 +2976,10 @@ footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
   background-color: #ee6e73;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 footer.page-footer .footer-copyright {
@@ -2983,7 +2987,7 @@ footer.page-footer .footer-copyright {
   height: 50px;
   line-height: 50px;
   color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(51, 51, 51, 0.08);
+ 
 }
 
 table, th, td {
