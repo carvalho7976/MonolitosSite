@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="monolitosSiteApp">
 <head>
 
   <title>MS</title>
@@ -10,125 +10,49 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/main.css" type="text/css"/>
     <link href="css/normalize.min.css" type="text/css"/>
-
+    
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/headroom.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/angular/angular.js"></script>
+    <script src="js/angular/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
 </head>
 
-<body>
+<body ng-controller="mainController">
     
     <nav class="personal-grey lighten-1 headroom" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo logo"> <img src="img/logo2.png"/></a>
+    <div class="nav-wrapper container"><a id="logo-container" href="#/" class="brand-logo logo"> <img src="img/logo2.png"/></a>
       
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Trabalhos</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Contatos</a></li>
+        <li><a href="#/">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Trabalhos</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Contatos</a></li>
+        <li><a href="#/">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="#/" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     
     </div>
   </nav>
- <div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="img/slider1.png"> <!-- random image -->
-        <div class="caption center-align">
-        </div>
-      </li>
-      <li>
-        <img src="img/slider2.png"> <!-- random image -->
-        <div class="caption left-align">
-        </div>
-      </li>
-      <li>
-        <img src="img/slider3.png"> <!-- random image -->
-        <div class="caption right-align">
-          </div>
-      </li>
-    </ul>
-  </div>
     
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center blue-text"></h1>
-      <div class="row center">
-        <h3 class="header col s12 light">Temos a solução para o seu negócio</h3>
-      </div>
-      <!--
-      <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-      </div>
-      -->
-      <br><br>
-
+    <div ng-view>    
     </div>
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">launch</i></h2>
-            <h4 class="center">Desenvolvimento Web</h4>
-
-            <p class="light">Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé, boa gente num é. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Leite de capivaris, leite de mula manquis. Detraxit consequat et quo num tendi nada.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h4 class="center">Soluções Customizas</h4>
-
-            <p class="light">Quem num gosti di mum que vai caçá sua turmis! Casamentiss faiz malandris se pirulitá. Mé faiz elementum girarzis, nisi eros vermeio. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">question_answer</i></h2>
-            <h4 class="center">Suporte Especializado</h4>
-
-            <p class="light">Interagi no mé, cursus quis, vehicula ac nisi. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Quem num gosta di mé, boa gente num é.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <br><br>
-
-    <div class="section">
-
-    </div>
-  </div>
-
-
-  <footer class="footer">
+ 
+  <footer class="footer" id="footer">
     <div class="footer-copyright center">
       © Monólitos Solutions - 2016
      </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-<script src="js/headroom.min.js"></script>
-<script src="js/slider.js"></script>
-  </body>
+  </footer> 
+    
+</body>
+      
 </html>
