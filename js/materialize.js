@@ -2260,7 +2260,7 @@ $(document).ready(function(){
             else {
               if ((menuOut && velocityX >= -0.3) || velocityX > 0.5) {
                 menu_id.velocity({'translateX': [0, rightPos]}, {duration: 300, queue: false, easing: 'easeOutQuad'});
-                $('#sidenav-overlay').velocity({opacity: 1 }, {duration: 50, queue: false, easing: 'easeOutQuad'});
+                $('#sidenav-overlay').velocity({opacity: 0 }, {duration: 50, queue: false, easing: 'easeOutQuad'});
                 dragTarget.css({width: '50%', right: '', left: 0});
               }
               else if (!menuOut || velocityX < -0.3) {
