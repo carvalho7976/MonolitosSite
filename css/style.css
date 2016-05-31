@@ -87,6 +87,10 @@ body {
     font-size: 18px;
     text-align: justify;
 }
+
+.row .col.s8{
+    margin-left: 25px;
+}
 .span5 img{
     max-width:400px;
     width:50%;
@@ -99,6 +103,7 @@ body {
 
 .jumbotron.vertical-center {
   margin-bottom: 0; /* Remove the default bottom margin of .jumbotron */
+  margin-left: auto;
 }
 
 .vertical-center {
