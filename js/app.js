@@ -18,6 +18,14 @@ app.config(function($routeProvider){
     .when('/contato', {
         templateUrl:'contato.html',
         controller:'mainController'
+    })
+    .when('/produtos', {
+        templateUrl:'produtos.html',
+        controller:'mainController'
+    })
+    .when('/smile', {
+        templateUrl:'smileSystem.html',
+        controller: 'mainController'
     });
     
     
