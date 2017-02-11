@@ -36,7 +36,7 @@ body {
 }
 
 .personal-grey{
-    background-color: #9ca1a7 !important;
+    background-color: #e5e5e5 !important;
 }
 
 .footer{
@@ -63,6 +63,11 @@ body {
 }
 .slider .indicators .indicator-item.active {
   background-color: #ffffff;
+}
+
+nav ul a {
+    color: black;
+    font-size: 15pt;
 }
 .slider {
   border-radius: 25px;
