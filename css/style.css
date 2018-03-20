@@ -1,169 +1,165 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-html {
-    position: relative;
-    min-height: 100%;
+:root{
+	--laranja: #ebab34;
+        --cinza: #e6e6e6;
+	--azul: #2673b5;
+	--cinza-escuro: #666666;
 }
-body {
-    margin: 0 0 100px; /* bottom = footer height */
+@font-face {
+    font-family: myriad;
+    src:  url(../fonts/myriad.otf);
+}
+body{
+font-family: myriad !important;
 }
 
-/* inicio style*/
-.paragrafo {
-    font-weight: 300;
-    font-size: 20px;
+/* Background */
+.bg-branco{
+	background-color: white !important;
 }
-.icon-block {
-  padding: 0 15px;
+.bg-laranja{
+	background-color: var(--laranja) !important;
 }
-.icon-block .material-icons {
-	font-size: inherit;
+.bg-cinza{
+        background: var(--cinza) !important;
 }
-#logo-container{
-	width: 50px;
-	height: auto;
+.bg-cinza-escuro{
+        background: var(--cinza-escuro) !important;
 }
-
-.logo {
-	 width: 70%;
-    height: auto !important;
+.bg-azul{
+        background: var(--azul) !important;
 }
 
-.personal-grey{
-    background-color: #e5e5e5 !important;
+/* Border */
+.border-radius{
+	border-radius: 10px;
+}
+.border-top-laranja{
+	border-top: 3px solid var(--laranja);
+}
+.border-bottom-laranja{
+	border-bottom: 3px solid var(--laranja);
+}
+.border-cinza{
+	border: solid 3px var(--cinza);
+}
+.border-laranja{
+	border: solid 3px var(--laranja)!important;
+}
+.border-branca{
+	border: solid 3px white!important;
+}
+.border-azul{
+	border: solid 3px var(--azul) !important;
 }
 
-.footer{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-    
-    background-color: #9ca1a7 !important;
+/* Ponteiros */
+.pointer{
+        cursor:pointer;
 }
-.footer-copyright{
-    font-weight: 300;
-    font-size: 16pt;
-}
-.slider .indicators .indicator-item {
-  border-radius: 25px;
-  background-color: #666666;
-  border: 3px solid #ffffff;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    
-}
-.slider .indicators .indicator-item.active {
-  background-color: #ffffff;
+.default{
+        cursor:default;
 }
 
-nav ul a {
-    color: black;
-    font-size: 15pt;
-}
-.slider {
-  border-radius: 25px;
-  width: auto;
-  margin: 0 auto;
-  margin-top: 5px;
-  margin-right: 50px;
-  margin-left: 50px;
-  
-}
-.slider img {
-    border-radius: 25px;
-    height: auto;
-    width: auto;
-}
-.slider .indicators {
-  bottom: 60px;
-  z-index: 100;
-    
-  /* text-align: left; */
-}
-/*fim inicio style*/
-
-/* inicio sobre stye*/
-.paragraphs p{
-    font-size: 18px;
-    text-align: justify;
-}
-
-.row .col.s8{
-    margin-left: 25px;
-}
-.span5 img{
-    max-width:400px;
-    width:50%;
-    height:auto;
-    background-size:100%;
-    background-repeat:no-repeat;
-    float:left;
+/* Text Forms */
+.text-bold{
+	font-weight: bold;
 }
 
 
-.jumbotron.vertical-center {
-  margin-bottom: 0; /* Remove the default bottom margin of .jumbotron */
-  margin-left: auto;
+/* Text Size*/
+.text-vinte{
+	font-size: 20px !important;
+}
+.text-dez{
+	font-size: 10px !important;
+}
+.text-quarenta{
+	font-size: 40px !important;
+}
+.text-setenta{
+	font-size: 70px !important;
 }
 
-.vertical-center {
-  min-height: 100%;  /* Fallback for vh unit */
-  min-height: 100vh; /* You might also want to use
-                        'height' property instead.
-                        
-                        Note that for percentage values of
-                        'height' or 'min-height' properties,
-                        the 'height' of the parent element
-                        should be specified explicitly.
-  
-                        In this case the parent of '.vertical-center'
-                        is the <body> element */
 
-  /* Make it a flex container */
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex; 
-  
-  /* Align the bootstrap's container vertically */
-    -webkit-box-align : center;
-  -webkit-align-items : center;
-       -moz-box-align : center;
-       -ms-flex-align : center;
-          align-items : center;
-  
-  /* In legacy web browsers such as Firefox 9
-     we need to specify the width of the flex container */
-  width: 100%;
-  
-  /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
-     hence the bootstrap's container won't be aligned to the center anymore.
-  
-     Therefore, we should use the following declarations to get it centered again */
-         -webkit-box-pack : center;
-            -moz-box-pack : center;
-            -ms-flex-pack : center;
-  -webkit-justify-content : center;
-          justify-content : center;
+/* Text Color */
+.branco{
+	color: white !important;
 }
-/* fim sobre stye*/
-/* inicio contato */
-.map iframe{
+.laranja{
+	color: var(--laranja) !important;
+}
+.cinza{
+        color: var(--cinza) !important;
+}
+.cinza-escuro{
+        color: var(--cinza-escuro) !important;
+}
+.azul{
+        color: var(--azul) !important;
+}
+
+/* Image */
+.img-vinte{
+	width: 300px;
+}
+.img-dez{
+	width: 150px;
+}
+.img-foto{
+    border-radius: 300px;
+    width: 40px;
+    background: white;
+    height: 40px;
+}
+
+/* Box-shadow */
+.shadow{
+	box-shadow: 3px 1px 10px 0px #e9e9e9;
+}
+
+/* Margin 50px */
+.mt-50{
+	margin-top: -66px;
+}
+.mr-8{
+        margin-right: 125px !important;
+}
+.mb-6{
+        margin-bottom: 100px !important;
+}
+
+
+/* Width */
+.w-content{
+	width: fit-content !important;
+}
+
+/* Select-user */
+.select-user{
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+/* list-itens */
+.list-inline-item {
     display: inline-block;
-    zoom: 3;
-     margin: 0 auto;
-    width: 100%;
-    height: 50%;
-
+    margin-left: 10px;
+    margin-right: 15px!important;
 }
 
+.footer {
+	position:fixed;
+	bottom:0px;
+	width:100%;
+}
+
+@media screen and (min-width: 992px) {
+.right{
+    	right: 30px;
+    	float: right;
+    	position: absolute;
+    	margin-top: -20px;
+}

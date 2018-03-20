@@ -2,9 +2,8 @@
 <html lang="en" ng-app="monolitosSiteApp">
 <head>
 
-  <title>MS</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Monolitos Solutions</title>
+    <meta charset="utf-8">
     <meta http-equiv="Content-Language" content="pt-br">
     <meta name="title" content="Monólitos Solutions">
     <meta name="reply-to" content="monolitossolutions@gmail.com">
@@ -14,21 +13,20 @@
     <meta name="copyright" content="Desenvolvido por Monólitos Solutions">
     <meta name="url" content="www.monólitossolutions.com.br">
     <meta name="keywords" content="Monólitos, software, site, desenvolvimento de programas, sistemas para empresas, aplicativos, programação de sites, consultoria, Quixadá, Fortaleza, Ceará, Brasil">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- for FF, Chrome, Opera -->
-<link rel="icon" type="image/png" href="img/logo4.png" sizes="16x16">
-<link rel="icon" type="image/png" href="img/logo4.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/logo4.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="img/logo4.png" sizes="32x32">
 
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/main.css" type="text/css"/>
-    <link href="css/normalize.min.css" type="text/css"/>
-    <link href="css/bootstrap.css" type="text/css"/>
-    
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css.map">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
    
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
@@ -38,44 +36,59 @@
     <script src="js/angular/angular.js"></script>
     <script src="js/angular/angular-route.min.js"></script>
     <script src="js/app.js"></script>
-  
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     
    
 </head>
 
-<body ng-controller="mainController">
+<body ng-controller="mainController" class="m-0 p-0">
     
-    <nav class="personal-grey lighten-1 headroom" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#/" class="brand-logo logo"> <img src="img/logo5.png"/></a>
+  <nav class="navbar navbar-toggleable-md bg-cinza border-bottom-branco">
+
+      <a class="navbar-brand" class="w-content"><img src="img/logo5.png" class="w-content"/></a>
       
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#/">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="#produtos">Produtos</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#/">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="#produtos">Produtos</a></li>
-
-      </ul>
-      <a href="#/"   data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    
+      <button class="navbar-toggler border-radius border-azul" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars azul"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav right">
+          <li class="nav-item">
+            <a class="nav-link cinza-escuro" href="#/">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cinza-escuro" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cinza-escuro" href="#produtos">Portfólio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cinza-escuro" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+          
+    <div ng-view class="m-0 p-0">    
     </div>
-  </nav>
-    
-    <div ng-view>    
-    </div>
- 
-  <footer class="footer" id="footer">
-    <div class="footer-copyright center">
-      © Monólitos Solutions - 2018
-     </div>
-  </footer> 
-    
+
+  <div class="bg-cinza-escuro mt-3 text-center border-top-laranja m-0 p-0">
+    <div class="row p-0 m-0 branco">
+      <div class="col-sm-12 col-md-6 text-left p-0 m-0">
+        <label class="text-vinte text-bold laranja text-center w-100 m-0 p-0">CONTATO</label><br>
+        <a href="tel:04188997864129"><label class="branco"><span class="fa fa-phone" aria-hidden="true"></span> Tel.: (88) 9 97864129</label></a><br>
+        <a href="mailto:contato@monolitossolutions.com.br"></a><label><span class="fa fa-envelope" aria-hidden="true"></span> Email: contato@monolitossolutions.com.br</label></a><br>
+        <a class="branco" target ="_blank" href="http://www.facebook.com/monolitossolutions"><label><span class="fa fa-facebook-official" aria-hidden="true"></span> Facebook: @monolitossolutions</label></a><br>
+        <a class="branco" target ="_blank" href="https://www.instagram.com/monolitos_solutions"><label><span class="fa fa-instagram" aria-hidden="true"></span> Instagram: @monolitos_solutions</label></a><br>
+        <label><span class="fa fa-map-marker" aria-hidden="true"></span> Endereço: Edificio Amazon Center, Sala 602, 6º Andar, Fl, 26. Qd. 14, Lt. 01, Novo Marabá, CEP: 68509060 - Marabá - PA</label>
+      </div>
+      <div class="col-sm-12 col-md-6 m-0 p-0">
+          <iframe class="w-100 h-100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-49.12034511566163%2C-5.3601014544870305%2C-49.08266544342042%2C-5.330875018856387&amp;layer=mapnik&amp;marker=-5.345496%2C-49.10148800000002" ></iframe>
+      </div>
+  </div>
+  <label class="text-vinte branco p-0 m-0">© Monólitos Solutions - 2018</label>
+  </div>
+   
 </body>
      <script>
     $( document ).ready(function() {
